@@ -1,5 +1,4 @@
 export default function FriendListItem({ avatar, name, isOnline }) {
-  //  const { avatar, name, isOnline } = friend;
   return (
     <div>
       <img src={avatar} alt="Avatar" width="48" />
