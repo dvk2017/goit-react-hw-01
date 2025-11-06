@@ -1,0 +1,68 @@
+.profileCard {
+  width: min(92vw, 420px);
+  margin: 12px;
+  border: 3px solid black;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.card__top {
+  padding: 28px 24px 20px;
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  aspect-ratio: 1;
+  margin: 6px auto 14px;
+  border-radius: 999px;
+  background: #2a2a2a; /* темне коло як на скріні */
+  display: grid;
+  place-items: center;
+}
+
+.name {
+  font-weight: 800;
+  font-size: clamp(22px, 4.6vw, 36px);
+  line-height: 1.1;
+  margin: 8px 0 2px;
+  letter-spacing: 0.2px;
+}
+
+.tag {
+  color: #6b7280;
+  font-size: 22px;
+  margin: 4px 0 6px;
+}
+
+.location {
+  color: #6b7280;
+  font-size: 24px;
+  margin: 2px 0 4px;
+}
+
+/* Низ картки зі статистикою */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #e5e7eb;
+  border-top: 3px solid #1f2937;
+}
+.stat {
+  padding: 18px 10px 22px;
+  text-align: center;
+  border-left: 3px solid #1f2937;
+}
+.stat:first-child {
+  border-left: 0;
+}
+.stat__label {
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+.stat__value {
+  display: block;
+  margin-top: 8px;
+  font-weight: 800;
+  font-size: 34px;
+}

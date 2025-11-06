@@ -1,0 +1,34 @@
+.card {
+  width: 120px;
+  height: 200px;
+  padding: 12px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+}
+
+.name {
+  font-weight: 450;
+  font-size: 30px;
+  margin: 8px 0 0px;
+}
+
+.state {
+  font-size: 18px;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: orangered;
+}
