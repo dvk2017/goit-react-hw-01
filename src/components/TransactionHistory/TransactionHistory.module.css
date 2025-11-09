@@ -1,0 +1,44 @@
+.transaction-history {
+  border: 2px solid black;
+  border-collapse: collapse; /* щоб рамки комірок злилися */
+  width: 80%;
+  table-layout: fixed;
+  font-size: 22px;
+}
+
+.transaction-history thead th {
+  background-color: #333;
+  color: white;
+  width: 33.33%;
+  padding: 10px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.transaction-history tbody tr:nth-child(even) {
+  background-color: #d4d4d4;
+}
+
+.transaction-history tbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+.transaction-history td {
+  padding: 4px 80px;
+  border: 2px solid black;
+  vertical-align: middle;
+}
+
+.transaction-history td::first-letter {
+  text-transform: uppercase;
+}
+
+.transaction-history td:nth-child(1) {
+  text-align: left;
+}
+
+.transaction-history td:nth-child(2),
+.transaction-history td:nth-child(3) {
+  text-align: center;
+}

@@ -1,8 +1,9 @@
 import TransactionItem from "../TransactionItem/TransactionItem.jsx";
+import styles from "./TransactionHistory.module.css";
 
 export default function TransactionHistory({ items = [] }) {
   return (
-    <table>
+    <table className={styles["transaction-history"]}>
       <thead>
         <tr>
           <th>Type</th>

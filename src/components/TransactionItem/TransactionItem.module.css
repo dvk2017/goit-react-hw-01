@@ -1,0 +1,17 @@
+.cell td {
+  padding: 10px;
+  /* Вирівнювання за вертикаллю */
+  vertical-align: middle;
+  border: none;
+}
+
+/* Вирівнювання тексту в колонках */
+/* "Type" зазвичай вирівнюється ліворуч (за замовчуванням) */
+.cell td:nth-child(1) {
+  text-align: left;
+}
+/* "Amount" та "Currency" вирівнюються праворуч/центр (як для числових даних) */
+.cell td:nth-child(2),
+.cell td:nth-child(3) {
+  text-align: center; /* Або right, якщо це виглядає краще для чисел */
+}
