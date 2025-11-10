@@ -14,11 +14,7 @@ export default function TransactionHistory({ items = [] }) {
 
       <tbody>
         {items.map((item) => {
-          return (
-            <tr key={item.id}>
-              <TransactionItem {...item} />
-            </tr>
-          );
+          return <TransactionItem key={item.id} {...item} />;
         })}
       </tbody>
     </table>
